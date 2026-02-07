@@ -495,6 +495,60 @@ const VehiclesSection = ({ scrollToSection }) => {
   );
 };
 
+// Custom Order Section
+const CustomOrderSection = () => {
+  return (
+    <section
+      data-testid="custom-order-section"
+      className="py-20 md:py-32 bg-[#0A0F1A]"
+    >
+      <div className="max-w-3xl mx-auto px-4 md:px-8 text-center">
+        <p className="text-xs uppercase tracking-[0.3em] text-gray-500 mb-4">
+          Servicio Especial
+        </p>
+
+        <h2
+          data-testid="custom-order-title"
+          className="font-['Syne'] text-2xl md:text-4xl lg:text-5xl font-semibold text-white tracking-tight mb-4"
+        >
+          ¿Buscas un vehículo específico?
+        </h2>
+
+        <p className="font-['Syne'] text-xl md:text-2xl text-gray-400 mb-8">
+          Lo conseguimos sobre pedido.
+        </p>
+
+        <div className="text-gray-400 text-base md:text-lg leading-relaxed mb-10 space-y-4">
+          <p>
+            Si no encuentras la unidad que buscas en nuestro catálogo,
+            gestionamos la importación, nacionalización y entrega
+            de vehículos premium bajo especificación del cliente.
+          </p>
+          <p>
+            Trabajamos bajo criterios claros, proveedores verificados
+            y procesos legales completos.
+          </p>
+        </div>
+
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="custom-order-cta"
+          className="inline-flex items-center gap-2 bg-white text-black hover:bg-gray-200 rounded-full px-8 py-4 text-base md:text-lg font-medium btn-primary transition-all duration-300"
+        >
+          Solicitar vehículo sobre pedido
+          <ArrowRight className="h-5 w-5" />
+        </a>
+
+        <p className="text-gray-500 text-sm mt-6">
+          La viabilidad depende del modelo, año, origen y condición legal del vehículo.
+        </p>
+      </div>
+    </section>
+  );
+};
+
 // Process Section
 const ProcessSection = () => {
   const steps = [
@@ -945,6 +999,7 @@ function App() {
       <ValueSection />
       <ServicesSection />
       <VehiclesSection scrollToSection={scrollToSection} />
+      <CustomOrderSection />
       <ProcessSection />
       <WhySection />
       <ContactSection />
