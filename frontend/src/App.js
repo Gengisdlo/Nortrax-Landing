@@ -342,6 +342,12 @@ const ServicesSection = () => {
       description:
         "Catálogo curado de vehículos premium listos para entrega.",
     },
+    {
+      icon: Truck,
+      title: "Envío a todo el país",
+      description:
+        "Coordinamos el traslado seguro de vehículos premium a cualquier estado de México, con operadores certificados y seguimiento durante todo el proceso.",
+    },
   ];
 
   return (
