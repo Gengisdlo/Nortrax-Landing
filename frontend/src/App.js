@@ -375,7 +375,7 @@ const VehiclesSection = ({ scrollToSection }) => {
       name: "Shelby GT500",
       type: "Edición Especial",
       image:
-        "https://images.unsplash.com/photo-1584345604476-8ec5f82d718c?w=800&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1567818772638-4e4d98a02ec2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxmb3JkJTIwc2hlbGJ5JTIwbXVzdGFuZyUyMGRhcmt8ZW58MHx8fHwxNzcwNDQ5MzMzfDA&ixlib=rb-4.1.0&q=85",
       specs: "V8 Supercharged · 760 HP",
     },
     {
