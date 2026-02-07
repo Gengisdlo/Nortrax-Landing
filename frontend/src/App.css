@@ -1,34 +1,90 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+.hero-gradient {
+    background: linear-gradient(to bottom, rgba(3,7,18,0) 0%, rgba(3,7,18,0.85) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.nav-blur {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.card-hover {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.App-link {
-    color: #61dafb;
+.card-hover:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
+.vehicle-card {
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vehicle-card:hover {
+    transform: scale(1.02);
+}
+
+.vehicle-card:hover .vehicle-image {
+    transform: scale(1.05);
+}
+
+.vehicle-image {
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.process-line {
+    background: linear-gradient(to bottom, #1E293B 0%, transparent 100%);
+}
+
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 40px -10px rgba(248, 250, 252, 0.3);
+}
+
+.btn-secondary {
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.input-focus {
+    transition: all 0.3s ease;
+}
+
+.input-focus:focus {
+    border-color: rgba(148, 163, 184, 0.5);
+    box-shadow: 0 0 0 2px rgba(148, 163, 184, 0.1);
+}
+
+.section-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: sectionFadeIn 0.8s ease-out forwards;
+}
+
+@keyframes sectionFadeIn {
     to {
-        transform: rotate(360deg);
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.metallic-text {
+    background: linear-gradient(135deg, #E2E8F0 0%, #94A3B8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.1;
     }
 }
