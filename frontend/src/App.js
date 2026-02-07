@@ -731,10 +731,10 @@ const ContactSection = () => {
                 <Mail className="h-5 w-5" />
                 <span>contacto@nortraxauto.mx</span>
               </div>
-              <div className="flex items-center gap-3">
+              <a href="tel:+526568157495" className="flex items-center gap-3 hover:text-white transition-colors">
                 <Phone className="h-5 w-5" />
-                <span>+52 (81) 1234 5678</span>
-              </div>
+                <span>+52 656 815 7495</span>
+              </a>
             </div>
 
             <div className="mt-8 p-6 bg-[#0F172A]/50 border border-white/5 rounded-xl">
