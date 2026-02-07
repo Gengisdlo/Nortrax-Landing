@@ -30,7 +30,10 @@ import {
   Truck,
   FileText,
   ClipboardCheck,
+  MessageCircle,
 } from "lucide-react";
+
+const WHATSAPP_URL = "https://wa.me/526568157495?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20unidades%20disponibles%20y%20tr%C3%A1mites%20de%20importaci%C3%B3n.";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
@@ -85,6 +88,16 @@ const Navbar = ({ scrollToSection }) => {
                 {link.label}
               </button>
             ))}
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="nav-whatsapp-btn"
+              className="flex items-center gap-2 bg-[#25D366] hover:bg-[#1da851] text-white rounded-full px-5 py-2 text-sm font-medium transition-all duration-300"
+            >
+              <MessageCircle className="h-4 w-4" />
+              WhatsApp
+            </a>
             <Button
               onClick={() => scrollToSection("contact")}
               data-testid="nav-contact-btn"
@@ -123,12 +136,21 @@ const Navbar = ({ scrollToSection }) => {
                   {link.label}
                 </button>
               ))}
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1da851] text-white rounded-full py-3 mt-4 font-medium transition-all duration-300"
+              >
+                <MessageCircle className="h-4 w-4" />
+                Hablar por WhatsApp
+              </a>
               <Button
                 onClick={() => {
                   scrollToSection("contact");
                   setIsMobileMenuOpen(false);
                 }}
-                className="bg-white text-black hover:bg-gray-200 rounded-full mt-4"
+                className="bg-white text-black hover:bg-gray-200 rounded-full mt-2"
               >
                 Consultar mi caso
               </Button>
