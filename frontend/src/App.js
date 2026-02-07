@@ -31,6 +31,7 @@ import {
   FileText,
   ClipboardCheck,
   MessageCircle,
+  MapPin,
 } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/526568157495?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20unidades%20disponibles%20y%20tr%C3%A1mites%20de%20importaci%C3%B3n.";
@@ -343,7 +344,7 @@ const ServicesSection = () => {
         "Catálogo curado de vehículos premium listos para entrega.",
     },
     {
-      icon: Truck,
+      icon: MapPin,
       title: "Envío a todo el país",
       description:
         "Coordinamos el traslado seguro de vehículos premium a cualquier estado de México, con operadores certificados y seguimiento durante todo el proceso.",
