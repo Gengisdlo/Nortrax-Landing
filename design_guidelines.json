@@ -1,0 +1,129 @@
+{
+  "identity": {
+    "name": "NORTRAX Auto",
+    "tone": "Professional, Sober, Premium, Trustworthy",
+    "audience": "High-net-worth individuals, Car Enthusiasts, Investors",
+    "theme_mode": "dark"
+  },
+  "typography": {
+    "primary_font": "Manrope",
+    "secondary_font": "Syne",
+    "usage": {
+      "headings": "Syne, sans-serif",
+      "body": "Manrope, sans-serif",
+      "accents": "Manrope, monospace"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tighter",
+      "h2": "text-3xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body": "text-base md:text-lg leading-relaxed text-muted-foreground",
+      "caption": "text-xs md:text-sm uppercase tracking-widest text-muted-foreground"
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#030712",
+      "foreground": "#F8FAFC",
+      "card": "#0F172A",
+      "card_foreground": "#F1F5F9",
+      "primary": "#F8FAFC",
+      "primary_foreground": "#020617",
+      "secondary": "#1E293B",
+      "secondary_foreground": "#F8FAFC",
+      "muted": "#1E293B",
+      "muted_foreground": "#94A3B8",
+      "accent": "#334155",
+      "accent_foreground": "#F8FAFC",
+      "border": "#1E293B",
+      "input": "#1E293B",
+      "ring": "#94A3B8"
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(to bottom, rgba(3,7,18,0) 0%, rgba(3,7,18,0.8) 100%)",
+      "metallic_sheen": "linear-gradient(135deg, #E2E8F0 0%, #94A3B8 100%)"
+    }
+  },
+  "layout": {
+    "container": "max-w-7xl mx-auto px-4 md:px-8",
+    "spacing": {
+      "section_padding": "py-20 md:py-32",
+      "element_gap": "gap-8 md:gap-12"
+    },
+    "grid_system": "grid grid-cols-1 md:grid-cols-12 gap-8"
+  },
+  "components": {
+    "navbar": {
+      "style": "fixed top-0 w-full z-50 border-b border-white/10 bg-background/60 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60",
+      "elements": ["Logo", "Services", "Inventory", "Process", "Contact CTA"]
+    },
+    "hero": {
+      "type": "Cinematic Full Screen",
+      "elements": ["Background Image", "Headline", "Subheadline", "Primary CTA (Form)", "Secondary CTA (Inventory)"],
+      "animation": "Fade in up with staggered text"
+    },
+    "buttons": {
+      "primary": "bg-white text-black hover:bg-gray-200 rounded-full px-8 py-6 text-lg font-medium transition-all duration-300",
+      "secondary": "bg-transparent border border-white/20 text-white hover:bg-white/10 rounded-full px-8 py-6 text-lg font-medium transition-all duration-300 backdrop-blur-sm"
+    },
+    "cards": {
+      "style": "bg-card/50 border border-white/5 hover:border-white/20 transition-all duration-500 rounded-xl overflow-hidden group",
+      "hover_effect": "group-hover:translate-y-[-4px] group-hover:shadow-2xl shadow-black/50"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": {
+        "url": "https://images.unsplash.com/photo-1712214910040-1f7f5925b16a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzcG9ydHMlMjBjYXIlMjBkYXJrJTIwc3R1ZGlvfGVufDB8fHx8MTc3MDQ0ODU5OXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Premium Sports Car in Dark Studio",
+        "usage": "Hero Section Background"
+      },
+      "vehicle_tesla": {
+        "url": "https://images.unsplash.com/photo-1633433431763-ff75584bb7ec?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwyfHx0ZXNsYSUyMG1vZGVsJTIwcyUyMGRhcmt8ZW58MHx8fHwxNzcwNDQ4NjAxfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Tesla Model S Plaid",
+        "usage": "Selected Vehicles Showcase"
+      },
+      "vehicle_interior": {
+        "url": "https://images.unsplash.com/photo-1765522074881-c4c3e81cb846?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBjYXIlMjBpbnRlcmlvciUyMGRldGFpbHxlbnwwfHx8fDE3NzA0NDg2MDh8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Luxury Interior Detail",
+        "usage": "Services or About Section"
+      },
+      "service_mechanic": {
+        "url": "https://images.unsplash.com/photo-1746079074494-822fb0f83364?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBjYXIlMjBtZWNoYW5pYyUyMGluc3BlY3Rpb258ZW58MHx8fHwxNzcwNDQ4NjEzfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Professional Inspection",
+        "usage": "Process or Trust Section"
+      }
+    },
+    "icons": "Lucide React (ShieldCheck, Globe, FileCheck, Car, ArrowRight, Star, Phone, Mail, MapPin)"
+  },
+  "motion": {
+    "library": "Framer Motion",
+    "animations": {
+      "fade_up": {
+        "initial": { "opacity": 0, "y": 20 },
+        "whileInView": { "opacity": 1, "y": 0 },
+        "viewport": { "once": true },
+        "transition": { "duration": 0.6, "ease": "easeOut" }
+      },
+      "stagger_container": {
+        "hidden": { "opacity": 0 },
+        "show": {
+          "opacity": 1,
+          "transition": { "staggerChildren": 0.1 }
+        }
+      }
+    }
+  },
+  "universal_guidelines": [
+    "Use 'Manrope' for all body text and 'Syne' for headings.",
+    "Maintain a dark, premium aesthetic with #030712 as the base background.",
+    "Use generous padding (py-24, py-32) to create breathing room.",
+    "Ensure all text has sufficient contrast (text-gray-100 on dark backgrounds).",
+    "Use subtle borders (border-white/10) instead of heavy shadows.",
+    "Implement smooth scrolling and micro-interactions on hover.",
+    "Do not use gradients for text; keep it clean and legible.",
+    "Use the provided image URLs for their respective sections.",
+    "Ensure the contact form is prominent but elegant.",
+    "All interactive elements must have data-testid attributes."
+  ]
+}
